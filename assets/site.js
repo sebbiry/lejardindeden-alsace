@@ -3,9 +3,12 @@ const form=document.querySelector('#quoteForm');if(form){form.addEventListener('
 
 if(!document.querySelector('.mobile-cta')){const bar=document.createElement('div');bar.className='mobile-cta';bar.innerHTML='<a href="tel:+33744400810">Appeler</a><a href="/contact.html">Devis gratuit</a>';document.body.appendChild(bar)}
 
-const photoFix=document.createElement('style');photoFix.textContent=`
-.proof img,.proof-premium img{height:auto!important;max-height:none!important;object-fit:contain!important;background:#f3f5f1;padding:8px}
-.hero-photo-wrap img{object-fit:contain!important;background:#f3f5f1}
-.distance-photo img,.aside img{height:auto!important;object-fit:contain!important;background:#f3f5f1}
-@media(max-width:620px){.proof img,.proof-premium img{height:auto!important;min-height:0!important}.hero-photo-wrap img{height:auto!important;max-height:520px!important}}
-`;document.head.appendChild(photoFix);
+
+const photoLinks=document.querySelectorAll('.photo-open');
+if(photoLinks.length){
+ const dialog=document.createElement('dialog');dialog.className='photo-dialog';dialog.setAttribute('aria-label','Photographie agrandie');
+ dialog.innerHTML='<button type="button" class="photo-close" aria-label="Fermer la photographie">Fermer ×</button><img alt=""><p></p>';document.body.appendChild(dialog);
+ const full=dialog.querySelector('img');let trigger;
+ photoLinks.forEach(link=>link.addEventListener('click',event=>{if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();trigger=link;full.src=link.href;full.alt=link.querySelector('img')?.alt||'Réalisation du Jardin d’Éden';dialog.querySelector('p').textContent=full.alt;dialog.showModal();}));
+ dialog.querySelector('button').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});dialog.addEventListener('close',()=>trigger?.focus());
+}
