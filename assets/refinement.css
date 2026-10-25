@@ -19,3 +19,5 @@
 .comparison .photo-open{width:100%;overflow:hidden}
 .comparison img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:3 / 4;object-fit:contain}
 @media(max-width:620px){.brand-tree{width:52px;height:52px;flex-basis:52px}.comparison-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+
+@media(min-width:861px){.secondary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
