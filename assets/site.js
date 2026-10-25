@@ -1,0 +1,4 @@
+const menu=document.querySelector('.menu-btn');const nav=document.querySelector('.navlinks');if(menu&&nav){menu.addEventListener('click',()=>{nav.classList.toggle('open');menu.setAttribute('aria-expanded',nav.classList.contains('open'))})}
+const form=document.querySelector('#quoteForm');if(form){form.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(form);const lines=[`Bonjour, je souhaite un devis pour ${d.get('service')}.`,`Nom : ${d.get('name')}`,`Commune / cimetière : ${d.get('place')}`,`Téléphone : ${d.get('phone')}`,`Précisions : ${d.get('message')||'—'}`];location.href=`sms:+33744400810?body=${encodeURIComponent(lines.join('\n'))}`})}
+
+if(!document.querySelector('.mobile-cta')){const bar=document.createElement('div');bar.className='mobile-cta';bar.innerHTML='<a href="tel:+33744400810">Appeler</a><a href="/contact.html">Devis gratuit</a>';document.body.appendChild(bar)}

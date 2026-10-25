@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lejardindeden-alsace.fr/sitemap.xml
