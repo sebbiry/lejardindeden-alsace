@@ -9,6 +9,8 @@ Ces conditions encadrent les prestations directement facturées par l’entrepri
 ## 2. Devis et commande
 Le formulaire du site sert uniquement à demander un devis ; son envoi ne constitue ni une commande ni un paiement. Le devis gratuit précise les prestations, leur lieu, le prix total et les frais éventuels, les fournitures, la période ou la date d’exécution, les conditions de règlement et la durée de validité de l’offre. Les conditions particulières et ces CGV sont remises avant engagement, sur un support permettant leur conservation.
 
+La version des CGV applicable est celle remise au client lors de la conclusion du contrat ; une mise à jour ultérieure ne modifie pas les contrats déjà conclus.
+
 La commande est formée par l’acceptation écrite du devis pendant sa validité. Tout travail supplémentaire ou remplacement de fournitures modifiant le prix nécessite un accord préalable. L’entreprise remet une confirmation du contrat sur support durable lorsque la réglementation le prévoit.
 
 ## 3. Prix et paiement
@@ -19,6 +21,8 @@ Le règlement s’effectue par virement bancaire ou par chèque, après l’inte
 
 ## 4. Accès et autorisations
 Le client communique les informations permettant d’identifier le lieu d’intervention et, pour une sépulture, le cimetière et son emplacement. Il s’assure d’être habilité à commander les travaux et signale les désaccords ou restrictions dont il a connaissance. Les autorisations nécessaires du concessionnaire et du gestionnaire du cimetière doivent être obtenues avant les travaux concernés.
+
+Le client signale les protections ou classements particuliers du monument dont il a connaissance. Les accès et les besoins éventuels en eau ou en électricité sont convenus avant intervention et indiqués au devis ; aucun branchement ou accès non autorisé n’est utilisé.
 
 Les horaires et règlements des lieux sont respectés. Les interventions ne comprennent aucune ouverture de sépulture, opération funéraire ou travail de marbrerie structurelle non expressément prévu et autorisé.
 
@@ -84,3 +88,24 @@ Adresse du/des consommateur(s) :
 Date :
 Signature (uniquement pour une notification papier).
 
+
+## Demande d’intervention avant la fin des 14 jours
+À compléter uniquement si le client souhaite un début d’exécution anticipé. Ce document ne sert pas à annuler la commande. Une copie est conservée par chaque partie.
+
+Devis concerné : ........................................................
+Date de conclusion du contrat : ........................................................
+Prestation : ........................................................
+Nom et prénom du client : ........................................................
+Adresse du client : ........................................................
+Date de début souhaitée : ........................................................
+
+[ ] Je demande expressément que la prestation décrite dans ce devis commence avant l’expiration de mon délai de rétractation de quatorze jours.
+
+[ ] Je reconnais que je perdrai mon droit de rétractation lorsque la prestation aura été intégralement exécutée. Le seul commencement de l’intervention ne supprime pas ce droit.
+
+Si j’exerce mon droit de rétractation après le début de la prestation demandé expressément, mais avant son exécution intégrale, je devrai régler la part du service effectivement fournie, proportionnellement au prix total convenu, dans les conditions légales et sous réserve de l’information préalable requise.
+
+Date : ........................................................
+Signature du client : ........................................................
+
+Le paiement reste dû après intervention, dans le respect du délai légal de sept jours applicable aux contrats hors établissement, sauf exception légale. Pour un contrat d’entretien régulier, la réalisation du premier passage ne signifie pas que l’ensemble du contrat est exécuté.
