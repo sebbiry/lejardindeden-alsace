@@ -35,8 +35,8 @@
 @media(max-width:900px){.navlinks{gap:0;padding:10px 16px;border-radius:16px}.navlinks>a:not(.btn),.nav-services-heading>a{display:flex;align-items:center;min-height:32px;padding:4px 0;line-height:1.4;margin:0}.nav-services-heading>a{flex:1}.navlinks>.btn{margin-top:8px;padding:8px 18px;min-height:38px;line-height:1.4}.services-submenu a{min-height:32px;padding:5px 10px;line-height:1.4}.services-toggle{flex:0 0 36px;min-width:36px;min-height:32px;height:32px}.services-submenu{margin:2px 0 4px 8px}}
 
 /* Display the supplied collage without the phone interface or blank margins. */
-.sepulture-montage{position:relative;overflow:hidden;aspect-ratio:663/664;border-radius:12px;margin-bottom:18px;background:#edf0e8}
-.aside .sepulture-montage img{position:absolute;max-width:none;width:104.2232%;height:auto;left:-2.1116%;top:-64.3072%;margin:0;padding:0;border-radius:0}
+.sepulture-montage{position:relative;overflow:hidden;aspect-ratio:681/682;border-radius:12px;margin-bottom:18px;background:#edf0e8}
+.aside .sepulture-montage img{position:absolute;max-width:none;width:104.1116%;height:auto;left:-2.0558%;top:-62.7566%;margin:0;padding:0;border-radius:0}
 .inscription-mask{position:absolute;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);border-radius:3px}
 .mask-main{left:33%;top:18%;width:17%;height:9%}.mask-left{left:15%;top:71%;width:11%;height:4%}.mask-middle{left:49%;top:72%;width:10%;height:4%}
 .quote-backup{margin-top:24px;padding-top:18px;border-top:1px solid var(--line)}
