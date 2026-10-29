@@ -33,3 +33,13 @@
 .site-header .brand-wordmark{display:flex;flex-direction:column;gap:4px}.site-header .brand-wordmark small{font:400 .6rem/1.4 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;white-space:normal}@media(max-width:620px){.site-header .brand-wordmark small{font-size:.5rem;letter-spacing:.08em}}
 .footer-seat{font-size:.85rem;margin:0 0 12px;line-height:1.5}
 @media(max-width:900px){.navlinks{gap:0;padding:10px 16px;border-radius:16px}.navlinks>a:not(.btn),.nav-services-heading>a{display:flex;align-items:center;min-height:32px;padding:4px 0;line-height:1.4;margin:0}.nav-services-heading>a{flex:1}.navlinks>.btn{margin-top:8px;padding:8px 18px;min-height:38px;line-height:1.4}.services-submenu a{min-height:32px;padding:5px 10px;line-height:1.4}.services-toggle{flex:0 0 36px;min-width:36px;min-height:32px;height:32px}.services-submenu{margin:2px 0 4px 8px}}
+
+/* Display the supplied collage without the phone interface or blank margins. */
+.sepulture-montage{position:relative;overflow:hidden;aspect-ratio:663/664;border-radius:12px;margin-bottom:18px;background:#edf0e8}
+.aside .sepulture-montage img{position:absolute;max-width:none;width:104.2232%;height:auto;left:-2.1116%;top:-64.3072%;margin:0;padding:0;border-radius:0}
+.inscription-mask{position:absolute;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);border-radius:3px}
+.mask-main{left:33%;top:18%;width:17%;height:9%}.mask-left{left:15%;top:71%;width:11%;height:4%}.mask-middle{left:49%;top:72%;width:10%;height:4%}
+.quote-backup{margin-top:24px;padding-top:18px;border-top:1px solid var(--line)}
+.quote-backup h3{margin:0 0 8px}.quote-backup-actions{display:flex;flex-wrap:wrap;gap:10px}.quote-backup-actions .btn{border:1px solid var(--green,#275f4c);background:#fff;color:#275f4c;cursor:pointer}
+#quoteStatus:empty{display:none}#quoteStatus{padding:14px;border-radius:8px;background:#fff4df;color:#513900;line-height:1.6}
+#quoteCopyText{width:100%;min-height:180px;margin-top:12px}#emailQuoteForm button:disabled{opacity:.65;cursor:wait}
