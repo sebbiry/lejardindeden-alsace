@@ -24,3 +24,17 @@ if(serviceGroup&&serviceToggle&&serviceSubmenu){
  document.addEventListener('keydown',event=>{if(event.key==='Escape'){if(!serviceSubmenu.hidden){closeServices();serviceToggle.focus()}else if(nav?.classList.contains('open')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.focus()}}});
  menu?.addEventListener('click',()=>{if(!nav.classList.contains('open'))closeServices()});
 }
+
+// Close the mobile menu when the page scrolls; scrolling within nav stays usable.
+if(menu&&nav){
+ let menuOpenedAt=window.scrollY;
+ menu.addEventListener('click',()=>{menuOpenedAt=window.scrollY});
+ window.addEventListener('scroll',()=>{
+  if(!window.matchMedia('(max-width: 900px)').matches||!nav.classList.contains('open'))return;
+  if(Math.abs(window.scrollY-menuOpenedAt)<12)return;
+  nav.classList.remove('open');
+  menu.setAttribute('aria-expanded','false');
+  if(serviceSubmenu)serviceSubmenu.hidden=true;
+  if(serviceToggle){serviceToggle.setAttribute('aria-expanded','false');serviceToggle.setAttribute('aria-label','Afficher les prestations de sépultures')}
+ },{passive:true});
+}
