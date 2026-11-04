@@ -2,3 +2,11 @@
 .secondary-card .service-photo-cadre{position:relative;overflow:hidden;padding:0;aspect-ratio:709/533}.secondary-card .service-photo-cadre img{position:absolute;left:0;top:-94.184%;width:100%;height:auto!important;max-height:none;aspect-ratio:auto;object-fit:contain;margin:0}.secondary-card .service-photo-portrait{aspect-ratio:709/1129}.secondary-card .service-photo-portrait img{top:-17.626%}.secondary-card .service-bricolage-photos{padding:0;display:grid;gap:8px}
 
 .secondary-card .service-bricolage-photos > .service-photo-cadre:first-child{transform:rotate(180deg)}
+
+/* Independent desktop columns; original reading order on smaller screens. */
+.services-independent .services-column{display:contents}
+.services-independent .service-order-1{order:1}
+.services-independent .service-order-2{order:2}
+.services-independent .service-order-3{order:3}
+.services-independent .service-order-4{order:4}
+@media(min-width:861px){.services-independent .services-column{display:flex;flex-direction:column;gap:18px;min-width:0}.services-independent .secondary-card{order:initial}}
