@@ -7,6 +7,13 @@
   const smsLink = document.getElementById('quoteSms');
   const copyText = document.getElementById('quoteCopyText');
   let sending = false;
+  const params = new URLSearchParams(window.location.search);
+  const formula = params.get('formule');
+  if (['2', '4', '6'].includes(formula)) {
+    form.elements.service.value = `abonnement annuel — ${formula} passages`;
+  } else if (params.get('service') === 'rechampissage') {
+    form.elements.service.value = 'rechampissage des lettres';
+  }
   function requestText() {
     const data = new FormData(form);
     return [
