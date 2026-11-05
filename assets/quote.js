@@ -53,7 +53,7 @@
     event.preventDefault();
     if (sending || !form.reportValidity()) return;
     const data = new FormData(form);
-    if (data.get('_honey')) return;
+    if (data.get('_gotcha')) return;
     updateBackup();
     sending = true;
     submit.disabled = true;
@@ -62,13 +62,11 @@
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
     try {
-      const response = await fetch('https://formsubmit.co/ajax/ns.lejardin.eden@gmail.com', {
-        method: 'POST', headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-        body: JSON.stringify(Object.fromEntries(data.entries())), signal: controller.signal
+      const response = await fetch(form.action, {
+        method: 'POST', headers: {'Accept': 'application/json'},
+        body: data, signal: controller.signal
       });
       if (!response.ok) throw new Error('Service unavailable');
-      const result = await response.json();
-      if (result.success !== true && result.success !== 'true') throw new Error('Submission not confirmed');
       window.location.assign('/demande-envoyee.html');
     } catch {
       status.textContent = 'L’envoi n’a pas pu être confirmé. Votre demande reste affichée. Vous pouvez réessayer ou utiliser « Par e-mail » ou « Par SMS » ci-dessous, puis appuyer sur Envoyer dans votre messagerie.';
